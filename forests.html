@@ -6,36 +6,70 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
         <!-- This links the CSS to the html -->
     </head>
     <body>
         <!-- Header -->
-        <header class="py-3 border-bottom">
-            <div class="container-fluid d-flex align-items-center justify-content-between">
-                <a href="index.html" class="btn btn-outline-secondary"> <img src="images/logo-placeholder.png" alt="Life on Land Logo" class="img-fluid" style="height: 50px;"></a>
-                <form class="d-md-flex mx-3" role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                
-            </div>
-        </header>
+		<header class="py-3 border-bottom">
+			<div class="container-fluid d-flex align-items-center justify-content-between">
+
+			<!-- Logo -->
+			<a href="index.html" class="btn btn-outline-secondary me-2">
+				<img src="assetsSM/images/logos/logoPlaceholder2.png" alt="Life on Land Logo" class="img-fluid" style="height: 50px;">
+			</a>
+
+			<!-- Buttons that navigate you to each persons individual page -->
+			<div class="d-none d-md-flex gap-2">
+				<a href="forests.html" class="btn btn-outline-secondary">Deforestation and Forest Conservation</a>
+				<a href="hadi.html" class="btn btn-outline-secondary">Austalian Wildlife</a>
+				<a href="david.html" class="btn btn-outline-secondary">Amazon Wildlife</a>
+				<a href="shane.html" class="btn btn-outline-secondary">Farming and Agriculture</a>
+			</div>
+
+			<!-- Search Bar -->
+			<form class="d-flex ms-auto me-2" role="search">
+				<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+			</form>
+
+			<!-- Hamburger Menu (Mobile Only) -->
+			<button class="btn d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+				<i class="bi bi-list" style="font-size: 1.8rem;"></i>
+			</button>
+
+			</div>
+
+			<!-- Mobile Dropdown Menu -->
+			<div class="collapse d-md-none mt-3" id="mobileMenu">
+				<div class="container">
+					<a href="forests.html" class="btn btn-outline-secondary w-100 mb-2">Deforestation and Forest Conservation</a>
+					<a href="hadi.html" class="btn btn-outline-secondary w-100 mb-2">Austalian Wildlife</a>
+					<a href="david.html" class="btn btn-outline-secondary w-100 mb-2">Amazon Wildlife</a>
+					<a href="shane.html" class="btn btn-outline-secondary w-100 mb-2">Farming and Agriculture</a>
+				</div>
+			</div>
+		</header>
+
+
         <!-- Hero Section -->
         <section class="container-fluid p-0">
-            <img src="assets/images/hero/deforstationHero.jpg" class="img-fluid w-100 hero-banner" alt="Main hero image">
+            <img src="assetsSM/images/hero/deforestationHero.jpg" class="img-fluid w-100 hero-banner" alt="Main hero image">
         </section>
         <!-- Content Section 1 -->
         <section class="container my-5">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <img src="images/deforestation1.jpg" class="img-fluid rounded" alt="Deforestation image 1">
+                    <img src="assetsSM/images/content/treeStump.jpg" class="img-fluid rounded" alt="Deforestation image 1">
                 </div>
                 <div class="col-md-8">
                     <h2>What Is Deforestation</h2>
-                    <p>Forests are being cleared at a pace that the natural world cannot recover from. Deforestation happens when 
-					large areas of trees are removed for farming, building, mining or logging. Once these trees are cut down, the 
-					land loses the ability to support many species and the soil becomes weak and dry. 
-					Forests that took centuries to grow can disappear in a matter of weeks, leaving long lasting damage behind.</p>
+                    <p>Deforestation happens when large areas of forest are cleared faster than they can naturally regrow. Trees are 
+					removed for farming, building, mining and timber, leaving the land exposed and unable to support the same level 
+					of life as before. Once these forests are gone, the soil becomes weak, wildlife loses its habitat and the landscape
+					changes permanently. Although it is a global issue, Ireland has also felt the impact. The country was once almost 
+					entirely covered in woodland, yet only a small amount of native forest remains today due to centuries of clearing 
+					for agriculture and settlement.</p>
                 </div>
             </div>
         </section>
@@ -44,14 +78,14 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <h2>Why Forests Matter</h2>
-                    <p>Forests play a vital role in keeping the planet healthy. They regulate temperature by storing carbon, which 
-					slows down climate change. They protect soil from erosion and help to prevent flooding. They are also home to over 
-					half of the world’s land based species. Many communities depend on forests for food, shelter and traditional 
-					livelihoods. When forests are destroyed, these natural systems break down and the effects can be felt across the 
-					world.</p>
+                    <p>Forests play a vital role in keeping environments stable and healthy. They store carbon and help slow the effects 
+					of climate change. They protect soil from erosion, reduce flooding and hold huge amounts of biodiversity. Many 
+					species depend on forests for food, shelter and breeding grounds. In Ireland, native woodlands support animals 
+					such as red squirrels, pine martens and a wide range of birds and insects. These forests also help manage rainfall, 
+					which is becoming more important as storms and heavy rain grow more frequent across the country.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/deforestation2.jpg" class="img-fluid rounded" alt="Deforestation image 2">
+                    <img src="assetsSM/images/content/forest.jpg" class="img-fluid rounded" alt="Deforestation image 2">
                 </div>
             </div>
         </section>
@@ -59,22 +93,24 @@
         <section class="container my-5">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <img src="images/deforestation3.jpg" class="img-fluid rounded" alt="Deforestation image 3">
+                    <img src="assetsSM/images/content/logPile.jpg" class="img-fluid rounded" alt="Deforestation image 3">
                 </div>
                 <div class="col-md-8">
                     <h2>The Main Causes of Forest Loss</h2>
-                    <p>The biggest driver of forest loss today is agriculture. Land is often cleared for cattle farming, soy plantations 
-					and palm oil production. Logging also removes huge numbers of trees for construction and furniture. Roads, mining 
-					sites and expanding cities push deeper into natural areas each year. In some regions, rising temperatures and
-					drought have caused more frequent wildfires, which quickly destroy habitats and are difficult to control.</p>
+                    <p>Forests are threatened for many reasons. Large areas are cleared for farming, livestock, logging and expanding 
+					towns and cities. In other places, rising temperatures and drought lead to wildfires that spread quickly and are 
+					difficult to control. While Ireland does not experience large scale tropical deforestation, it faces its own 
+					challenges. Native woodland has been reduced over time, and in many areas it has been replaced with fast growing 
+					commercial plantations that do not support the same range of species. Storm damage and land use change also 
+					contribute to the loss of true native forest.</p>
                 </div>
             </div>
         </section>
         <!-- Learn More Button which links to second page-->
 		
         <div class="text-center my-5">
-			<p>Protecting existing forests is one of the most effective ways to support life on land and reduce climate damage. 
-			Small actions from individuals and communities make a real difference.</p>
+			<p>Protecting the remaining native woodlands in Ireland is an important step in supporting life on land and strengthening 
+			ecosystems for future generations.</p>
             <a href="protectforests.html" class="btn btn-outline-dark btn-lg">Learn More</a>
         </div>
         <!-- Footer -->
