@@ -1,47 +1,43 @@
-/* This is the CSS file */
+/* Stephen's CSS */
 
-body {
- 
-/* background-color:#5d8561; */
+/* Colour for all headings to match the forest theme */
+.headings{
+	color: #31572c;
 }
 
-h2 {
-  color: #31572c;
+/* Hero banner image on my first page: fix the height and crop nicely */
+.hero-banner{
+	height: 350px;
+	object-fit: cover;
+	width: 100%;
 }
 
-.hero-banner {
-    height: 350px;
-    object-fit: cover;
-    width: 100%;
+/* Shared button style for the outline dark buttons, including the Learn More button */
+.btn-outline-dark{
+	border-color: #31572c;
+	color: #31572c;
 }
 
-
-/* For button "Learn More" on bottom first page */
-.btn-outline-dark {
-  border-color: #31572c;
-  color: #31572c;
-}
-/* For button "Learn More" on bottom of first page when its hovered */
-.btn-outline-dark:hover {
-  background-color: #31572c;
-  color: #FFFFFF;
+/* Hover effect so buttons fill with my green colour */
+.btn-outline-dark:hover{
+	background-color: #31572c;
+	color: #FFFFFF;
 }
 
-/* Navigation Colour */
-.nav-link {
+/* Navigation Colour: make nav links match the green theme */
+.nav-link{
     color: #31572c;
     font-weight: 500;
 }
-.nav-link:hover {
+
+/* Slightly darker colour on hover for nav links */
+.nav-link:hover{
     color: #1a3c1a;
 }
 
-/* Form */
-.pledge-result {
-  margin-top: 1rem;
-  font-weight: 500;
-  color: #31572c;
+/* Result message under the pledge form on my second page */
+.pledge-result{
+	margin-top: 1rem;
+	font-weight: 500;
+	color: #31572c;
 }
-
-
-

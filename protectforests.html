@@ -3,62 +3,74 @@
 <html lang="en">
 
 	<head>
+		<!-- Page title that shows in the browser tab -->
 		<title>How You Can Help Protect Forests</title>
+		<!-- Make sure the page displays correctly on all devices -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- My name for the author meta tag -->
 		<meta name="author" content="Stephen Murphy">
+		<!-- Bootstrap CSS for layout and styling -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<!-- Bootstrap icons so I can use the back arrow icon -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-		<link rel="stylesheet" href="css/style.css"> <!-- This links the CSS to the html -->
+		<!-- This links to the CSS file -->
+		<link rel="stylesheet" href="css/style.css"> 
 	</head>
 	
 	<body>
-        <!-- Nav Bar -->
+	
+        <!-- Nav Bar: shared navigation for all pages in the site -->
 		<nav>
 		<ul class="nav nav-underline p-2">
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="index.html">Home</a>
+				<!-- Link back to the home page -->
+				<a class="nav-link" href="index.html">Home</a>
 			</li>
 
 			<li class="nav-item">
+				<!-- Link to Hadi's page -->
 				<a class="nav-link" href="australia.html">Hadi</a>
 			</li>
 
 			<li class="nav-item">
+				<!-- Link to David's page -->
 				<a class="nav-link" href="amazon.html">David</a>
 			</li>
 
 			<li class="nav-item">
-				<a class="nav-link active" href="forests.html">Stephen</a>
+				<!-- My section is still Stephen, so this looks active and current -->
+				<a class="nav-link active" aria-current="page" href="forests.html">Stephen</a>
 			</li>
 
 			<li class="nav-item">
+				<!-- Link to Shane's page -->
 				<a class="nav-link" href="ss1.html">Shane</a>
 			</li>
 		</ul>
 		</nav>
 
-		<!-- Back Arrow -->
+		<!-- Back Arrow: quick way to go back to my first page -->
 		<div class="container my-4">
 			<a href="forests.html" class="btn btn-outline-secondary">
 				<i class="bi bi-arrow-left"></i>
 			</a>
 		</div>
 
-		<!-- Page Title -->
+		<!-- Page Title: main heading for this page -->
 		<div class="container">
-			<h1 class="mb-4">How You Can Help Protect Forests</h1>
+			<h1 class="mb-4 headings">How You Can Help Protect Forests</h1>
 		</div>
 
-		<!-- Content Section 1 -->
+		<!-- Content Section 1: sustainable choices people can make -->
 		<section class="container my-5">
 			<div class="row align-items-center">
 				<div class="col-md-4">
-					<img src="assets/images/content/recycle.png" class="img-fluid rounded" alt="Sustainable Choices">
+					<img src="assets/images/content/recycle.jpg" class="img-fluid rounded" alt="Sustainable Choices">
 				</div>
 
 				<div class="col-md-8">
-					<h2>Sustainable Choices</h2>
+					<h2 class="headings">Sustainable Choices</h2>
 					<p>
 					Everyday decisions can have a real impact on forest conservation. Choosing products 
 					made from recycled paper, avoiding items linked to harmful deforestation and supporting 
@@ -69,7 +81,7 @@
 			</div>
 		</section>
 
-		<!-- Long Text Block -->
+		<!-- Long Text Block: more detailed explanation of how individual actions help -->
 		<section class="container my-5">
 					<p>
 					Forests support biodiversity, stabilise soil, regulate climate and provide clean air. While
@@ -100,7 +112,7 @@
 		</section>
 
 
-		<!-- Content Section 2 -->
+		<!-- Content Section 2: local action like tree planting and clean ups -->
 		<section class="container my-5">
 			<div class="row align-items-center">
 				<div class="col-md-4">
@@ -108,7 +120,7 @@
 				</div>
 
 				<div class="col-md-8">
-					<h2>Local Action</h2>
+					<h2 class="headings">Local Action</h2>
 					<p>
 					Getting involved in local conservation projects is one of the most effective ways to help. 
 					Community tree planting events, woodland clean ups and supporting nature groups all have a 
@@ -119,11 +131,11 @@
 			</div>
 		</section>
 
-		<!-- Content Section 3 -->
+		<!-- Content Section 3: final text about awareness and wider efforts -->
 		<section class="container my-5">
 			<div class="row align-items-center">
 				<div class="col-md-4">
-					<img src="assets/images/content/help3.jpg" class="img-fluid rounded" alt="Community Support">
+					<img src="assets/images/content/community.jpg" class="img-fluid rounded" alt="Community Support">
 				</div>
 
 				<div class="col-md-8">
@@ -138,23 +150,26 @@
 		</section>
 		
 		
-		<!-- Forest friendly pledge form -->
+		<!-- Forest friendly pledge form: my JavaScript form feature for this page -->
 		<section class="container my-5">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
-					<h2 class="mb-3">Make a forest friendly pledge</h2>
+					<h2 class="mb-3 headings">Make a forest friendly pledge</h2>
 					<p>
 					Choose a few simple actions you are willing to take and add your name to make a forest friendly pledge.
 					</p>
 
+					<!-- Form that lets the user make a pledge -->
 					<form id="forestPledgeForm" class="border rounded p-3 bg-light">
 						<div class="mb-3">
+							<!-- Name field so I can personalise the message -->
 							<label for="pledgeName" class="form-label">Your name</label>
 							<input type="text" class="form-control" id="pledgeName" placeholder="Enter your name">
 						</div>
 
 						<p class="mb-2">I will</p>
-
+						
+						<!-- Each checkbox is one action the user can pledge to do -->
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="use more recycled paper and notebooks" id="pledgeRecycled">
 							<label class="form-check-label" for="pledgeRecycled">
@@ -182,67 +197,84 @@
 								Support local tree planting or woodland events
 							</label>
 						</div>
-
+						
+						<!-- Submit button to send the form and trigger my JS -->
 						<button type="submit" class="btn btn-outline-dark mt-3">
 							Make my pledge
 						</button>
 					</form>
 
+					<!-- This div shows the result message after the form is submitted -->
 					<div id="pledgeResult" class="pledge-result"></div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Footer -->
+		<!-- Footer: simple bottom bar with my name -->
 		<footer class="text-center py-3 border-top">
 			<p>Author: Stephen Murphy</p>
 		</footer>
 		
-		<!-- Pledge form JS -->
+		<!-- Pledge form JS: JavaScript to validate the form and show a message -->
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
+				// Get the form element
 				const form = document.getElementById('forestPledgeForm')
+				//If form is not found on page, stop the script
 				if (!form) return
-
+				
+				//Get the name input, all checkboxes and result box
 				const nameInput = document.getElementById('pledgeName')
 				const checkboxes = form.querySelectorAll('input[type="checkbox"]')
 				const resultBox = document.getElementById('pledgeResult')
-
+				
+				//Listen for when the form is submitted
 				form.addEventListener('submit', function (event) {
+					//Stop the page from refreshing
 					event.preventDefault()
 
+					//Get the name and remove any extra spaces
 					const nameValue = nameInput.value.trim()
+					// Count how many boxes are ticked
 					let numberChosen = 0
 
-					// count how many boxes are ticked
+					// Go through the checkboxes and count selected ones
 					for (let i = 0; i < checkboxes.length; i++) {
 						if (checkboxes[i].checked) {
 							numberChosen = numberChosen + 1
 						}
 					}
 
+					// Message that I will show back to the user
 					let message = ''
 
+					// Simple validation checks
 					if (!nameValue) {
+						// User forgot to type their name
 						message = 'Please add your name so we can complete your pledge.'
 					} else if (numberChosen === 0) {
+						// User did not pick any actions
 						message = 'Choose at least one action before you make your pledge.'
 					} else {
+						// Success message when name and at least one action are chosen
 						message = 'Thank you ' + nameValue + ' for making a forest friendly pledge. '
 						message += 'You chose ' + numberChosen + ' action'
+						// Make the word actions plural if more than one is chosen
 						if (numberChosen > 1) {
 							message += 's'
 						}
 						message += ' to help protect forests.'
 
+						// Clear the form after a successful pledge
 						form.reset()
 					}
-
+					// Show the final message in the result box
 					resultBox.innerText = message
 				})
 			})
 		</script>
-
+		
+		<!-- Bootstrap JS bundle for any interactive Bootstrap features -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 	</body>
