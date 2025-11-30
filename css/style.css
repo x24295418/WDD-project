@@ -27,7 +27,21 @@ h2 {
   color: #FFFFFF;
 }
 
-.nav{
-	color:green
+/* Navigation Colour */
+.nav-link {
+    color: #31572c;
+    font-weight: 500;
 }
+.nav-link:hover {
+    color: #1a3c1a;
+}
+
+/* Form */
+.pledge-result {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #31572c;
+}
+
+
 
